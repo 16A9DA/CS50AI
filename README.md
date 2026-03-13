@@ -1,2 +1,2 @@
-# CS50 Introduction to Aritificial Intelligence with Python
-The following repo stores my project that were completed for AI course of Harvard Introduction to AI using python.
+# CS50 Aritificial Intelligence with Python
+The following repo stores my projects for certification of CS50,each different branch is of a different topic.
