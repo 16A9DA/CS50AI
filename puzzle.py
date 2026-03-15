@@ -41,7 +41,7 @@ knowledge2 = And(
     Not(And(BKnight, BKnave)),
     Implication(AKnight, Or(And(AKnight, BKnight), And(AKnave, BKnave))),
     Implication(AKnave, Not(Or(And(AKnight, BKnight), And(AKnave, BKnave)))),
-    Implication(BKnight, Not(Or(And(AKnight, AKnave), And(AKnave, BKnave)))),
+    Implication(BKnight, Not(Or(And(AKnight, BKnight), And(AKnave, BKnave)))),
     Implication(BKnave, Or(And(AKnight, BKnight), And(AKnave, BKnave))),
 )
 
@@ -57,9 +57,12 @@ knowledge3 = And(
     Not(And(BKnight, BKnave)),
     Or(CKnight, CKnave),
     Not(And(CKnight, CKnave)),
-    CKnight,
-    BKnave,
+    Implication(BKnave, AKnight),
+    Implication(BKnight, AKnight),
+    Implication(BKnight, CKnave),
+    Implication(BKnave, CKnight),
     Implication(CKnight, AKnight),
+    Implication(CKnave, Not(AKnight))
 )
 
 
