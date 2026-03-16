@@ -1,0 +1,1 @@
+This branch contains: Minesweeper AI that uses propositional logic and inference to identify safe cells and mines on the board
