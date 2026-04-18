@@ -1,0 +1,1 @@
+Bayesian network inference that computes joint probabilities of gene inheritance and trait expression from family data.
