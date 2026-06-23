@@ -1,0 +1,1 @@
+A CSP-based crossword puzzle generator using node consistency, arc consistency (AC-3), and backtracking search to fit words into a given grid structure.
