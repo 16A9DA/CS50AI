@@ -53,16 +53,12 @@ def get_mask_token_index(mask_token_id, inputs):
         if token_id == mask_token_id:
             return i
 
+
     return None
 
-
 def get_color_for_attention_score(attention_score):
-    """
-    Return a shade of gray corresponding to the attention score.
-    """
-
-    value = round(attention_score * 255)
-    return (value, value, value)
+    attention_score = float(attention_score.numpy()) if hasattr(attention_score, "numpy") else float(attention_score)
+    return round(attention_score * 255)
 
 
 def visualize_attentions(tokens, attentions):
